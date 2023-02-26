@@ -17,7 +17,7 @@ comment-support: utterances
 #  - jekyll-paginate
 #  - jekyll-gist
 
-# permalink: /blog/:year/:month/:day/:title/
+permalink: /blog/:year/:month/:day/:title/
 
 markdown: kramdown
 highlighter: rouge
@@ -25,9 +25,9 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-paginate: 10
-paginator_path: "/blog"
-paginate_path: "/blog/page:num/"
+  # paginate: 10
+  #paginator_path: "/blog"
+  #paginate_path: "/blog/page:num/"
 
 # Collections
 collections:
@@ -36,22 +36,20 @@ collections:
         permalink: /:collection/:path/
 
 # Comment Service
-giscus:
-  repo: Hwieun/hwieun.github.io
-  repo_id: SAMPLE-VALUE
-  category: Announcements
-  category_id: SAMPLE-VALUE
+#giscus:
+#  repo: Hwieun/hwieun.github.io
+#  repo_id: SAMPLE-VALUE
+#  category: Announcements
+#  category_id: SAMPLE-VALUE
 
 google_analytics:
-  ua: SAMPLE-VALUE
-  encrypted_ua: THIS-IS-SAMPLE-VALUE
-
+  ua:
 google_adsense:
-  client: SAMPLE-VALUE
+  client:
 
-blame: "https://github.com/Hwieun/hwieun.github.io/blame/master/_wiki"
-edit: "https://github.com/Hwieun/hwieun.github.io/edit/master/_wiki"
-issue: "https://github.com/Hwieun/hwieun.github.io/issues/new"
+  #blame: "https://github.com/Hwieun/hwieun.github.io/blame/master/_wiki"
+  #edit: "https://github.com/Hwieun/hwieun.github.io/edit/master/_wiki"
+  #issue: "https://github.com/Hwieun/hwieun.github.io/issues/new"
 
 timezone: "Asia/Seoul"
 
@@ -63,6 +61,8 @@ kramdown:
 # more settings
 plugins:
   - jekyll-redirect-from
+  - jekyll-paginate
+  - jekyll-gist
 
 whitelist:
   - jekyll-redirect-from
@@ -80,17 +80,17 @@ compress_html:
 #   sass_dir: css
 #   style:    compressed
 
-collections:
-  my_tags:
-    output: true
-    permalink: /tagged/:slug/
-defaults:
-  -
-    scope:
-      path: ""
-      type: my_tags
-    values:
-      layout: tagged
+      #collections:
+      #my_tags:
+      #output: true
+      #permalink: /tagged/:slug/
+
+#defaults:
+#    scope:
+#      path: ""
+#      type: wiki
+#    values:
+#      layout: tagged
 
 # baseurl: ""
 permalink: /blog/:slug
@@ -103,6 +103,7 @@ exclude:
 exclude: [vendor]
 
 Blog: /blog
+Wiki: /wiki
 
 # Add general links to site pages here
 links:
