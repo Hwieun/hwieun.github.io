@@ -1,13 +1,18 @@
-<!DOCTYPE html>
-<html>
-    {% include header.html %}
-    <body>
-        <div class="page-content">
-            {% include searchbox.html %}
-            <div class="post">
-                {{ content }}
-            </div>
-        </div>
-        {% include footer.html %}
-    </body>
+---
+layout: compress
+---
+
+{% include head.html %}
+
+    <main>
+
+        {% include header.html %}
+
+        {{ content }}
+
+    </main>
+
+    {% include footer.html %}
+
+</body>
 </html>
