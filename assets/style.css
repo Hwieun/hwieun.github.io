@@ -242,6 +242,24 @@ ul.blog-posts li a:visited {
     color: #8b6fcb;
 }
 
+/* wiki items */
+ul.wiki-items {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.wiki-items li {
+    display: flex;
+}
+
+ul.wiki-items li span {
+    flex: 0 0 130px;
+}
+
+ul.wiki-items li a:visited {
+    color: #8b6fcb;
+}
+
 /* discovery feed */
 ul.discover-posts {
     list-style-type: none;
@@ -312,7 +330,13 @@ ul.discover-posts li small a {
     }
 }
 
+ul.wiki-items {
+    padding-bottom: 0.61803rem;
+}
 
+ul.wiki-items li {
+    padding-top: 0.61803rem;
+}
 
 ul.blog-posts {
     padding-bottom: 0.61803rem;

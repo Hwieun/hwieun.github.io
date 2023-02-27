@@ -17,7 +17,7 @@ comment-support: utterances
 #  - jekyll-paginate
 #  - jekyll-gist
 
-permalink: /blog/:year/:month/:day/:title/
+# permalink: /blog/:year/:month/:day/:title/
 
 markdown: kramdown
 highlighter: rouge
@@ -31,9 +31,12 @@ kramdown:
 
 # Collections
 collections:
-    wiki:
-        output: true
-        permalink: /:collection/:path/
+  wiki:
+    output: true
+    permalink: /:collection/:path/
+  my_tags:
+    output: true
+    permalink: /tagged/:slug/
 
 # Comment Service
 #giscus:
@@ -80,17 +83,30 @@ compress_html:
 #   sass_dir: css
 #   style:    compressed
 
-      #collections:
-      #my_tags:
-      #output: true
-      #permalink: /tagged/:slug/
-
-#defaults:
-#    scope:
-#      path: ""
-#      type: wiki
-#    values:
-#      layout: tagged
+defaults:
+  - 
+    scope:
+     path: ""
+     type: my_tags
+    values:
+     layout: tagged
+  -
+    scope:
+      path: ""
+      type: wiki
+    values:
+      layout: wiki
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
 
 # baseurl: ""
 permalink: /blog/:slug
@@ -103,7 +119,7 @@ exclude:
 exclude: [vendor]
 
 Blog: /blog
-Wiki: /wiki
+Wiki: /wiki/root-index
 
 # Add general links to site pages here
 links:
@@ -111,5 +127,5 @@ links:
   
 
 # Add links for more focus here
-special_links:
-  "Search": https://duckduckgo.com
+# special_links:
+#   "Search": https://duckduckgo.com
