@@ -13,9 +13,13 @@ github_username: Hwieun
 comment-support: utterances
 
 # Build settings
-# plugins:
-#  - jekyll-paginate
-#  - jekyll-gist
+plugins:
+  - jekyll-redirect-from
+  - jekyll-paginate
+  - jekyll-gist
+
+whitelist:
+  - jekyll-redirect-from
 
 # permalink: /blog/:year/:month/:day/:title/
 
@@ -25,9 +29,9 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-  # paginate: 10
-  #paginator_path: "/blog"
-  #paginate_path: "/blog/page:num/"
+paginate: 10
+paginator_path: "/blog"
+paginate_path: "/blog/page:num/"
 
 # Collections
 collections:
@@ -39,20 +43,20 @@ collections:
     permalink: /tagged/:slug/
 
 # Comment Service
-#giscus:
-#  repo: Hwieun/hwieun.github.io
-#  repo_id: SAMPLE-VALUE
-#  category: Announcements
-#  category_id: SAMPLE-VALUE
+giscus:
+ repo: Hwieun/hwieun.github.io
+ repo_id: SAMPLE-VALUE
+ category: Announcements
+ category_id: SAMPLE-VALUE
 
 google_analytics:
   ua:
 google_adsense:
   client:
 
-  #blame: "https://github.com/Hwieun/hwieun.github.io/blame/master/_wiki"
-  #edit: "https://github.com/Hwieun/hwieun.github.io/edit/master/_wiki"
-  #issue: "https://github.com/Hwieun/hwieun.github.io/issues/new"
+blame: "https://github.com/Hwieun/hwieun.github.io/blame/master/_wiki"
+edit: "https://github.com/Hwieun/hwieun.github.io/edit/master/_wiki"
+issue: "https://github.com/Hwieun/hwieun.github.io/issues/new"
 
 timezone: "Asia/Seoul"
 
@@ -60,15 +64,6 @@ timezone: "Asia/Seoul"
 kramdown:
     smart_quotes: ["apos", "apos", "quot", "quot"]
 
-#########################
-# more settings
-plugins:
-  - jekyll-redirect-from
-  - jekyll-paginate
-  - jekyll-gist
-
-whitelist:
-  - jekyll-redirect-from
 
 compress_html:
   clippings: all
@@ -108,7 +103,6 @@ defaults:
     values:
       layout: default
 
-# baseurl: ""
 permalink: /blog/:slug
 future: false
 

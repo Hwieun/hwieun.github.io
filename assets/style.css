@@ -292,7 +292,7 @@ ul.discover-posts li small a {
 }
 
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: white) {
     body {
         background-color: #01242e;
         color: #ddd;
