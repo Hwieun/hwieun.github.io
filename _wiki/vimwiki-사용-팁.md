@@ -3,7 +3,7 @@ layout  : wiki
 title   : 
 summary : 
 date    : 2023-02-22 21:55:43 +0900
-updated : 2023-02-22 21:55:50
+updated : 2023-03-05 12:48:10
 tag     : 
 toc     : true
 public  : true
@@ -13,8 +13,6 @@ resource: 532DAAE4-4AC7-475E-AF7D-E274E699B585
 ---
 * TOC
 {:toc}
-
- # 개요
 
 
 ## command
@@ -28,3 +26,9 @@ d # 디렉토리 생성
 - Ctrl + O => jump back to the previous(older) location, not necessarily buffer
 - Ctrl + w then q => split window close
 - Ctrl + Space => 체크박스 생성, 한 번 더 누르면 체크박스 채워짐
+
+# vim -> clipboard 복사하기
+
+1. vim에서 v를 눌러서 visual 모드로 진입
+2. 복사할 영역을 드래그
+3. "+y 입력

@@ -4,12 +4,17 @@ title   : wiki
 toc     : true
 public  : true
 comment : false
-updated : 2022-12-07 23:01:03 +0900
+updated : 2023-03-05 13:45:59
 regenerate: true
 ---
 
+# Diary
+
+* [[/memo]]
+
+
 <div>
-    <H3 class="indent">최근 변경된 문서</H3>
+    <H3 class="indent">Wiki</H3>
     <ul class="post-list">
 {% assign documents = site.wiki | sort: 'updated' | reverse %}
 {% for doc in documents limit: 30 %}

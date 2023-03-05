@@ -3,12 +3,11 @@
     <a href="{{ site.url }}">Home</a> 
     <a href="{{ site.url }}{{ site.Wiki }}">Wiki</a>
     <a href="{{ site.url }}{{ site.Blog }}">Blog</a>
-
+        <a id="random-button" class="site-title-right">Random</a>
+        <a class="site-title-right" href="/wiki/root-index/">Index</a>
     {% for link in site.links %}
         <a href="{{ site.url }}{{ link[1] }}">{{ link[0] }}</a>
     {% endfor %}
-    
-    {% for link in site.special_links %}
-            <a href="{{ link[1] }}">[{{ link[0] }}]</a>
-    {% endfor %}
+
 </nav>
+<script async src="/js/shortcut.js"></script>

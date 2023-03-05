@@ -113,7 +113,7 @@ exclude:
 exclude: [vendor]
 
 Blog: /blog
-Wiki: /wiki/root-index
+Wiki: /recent
 
 # Add general links to site pages here
 links:
