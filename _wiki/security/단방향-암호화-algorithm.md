@@ -1,9 +1,9 @@
 ---
 layout  : wiki
-title   : 
+title   : 단방향 암호화 algorithm
 summary : 
 date    : 2023-02-27 09:57:56 +0900
-updated : 2023-02-27 10:03:31
+updated : 2023-03-05 14:23:20
 tag     : 
 toc     : true
 public  : true

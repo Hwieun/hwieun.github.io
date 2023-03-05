@@ -1,9 +1,9 @@
 ---
 layout  : wiki
-title   : 
+title   : vimwiki 사용 팁
 summary : 
 date    : 2023-02-22 21:55:43 +0900
-updated : 2023-03-05 12:48:10
+updated : 2023-03-05 14:22:57
 tag     : 
 toc     : true
 public  : true
@@ -32,3 +32,9 @@ d # 디렉토리 생성
 1. vim에서 v를 눌러서 visual 모드로 진입
 2. 복사할 영역을 드래그
 3. "+y 입력
+
+반대로 clipboard -> vim은 "+p 입력
+
+# vim 화면 세로 split
+
+ctrl + w + v

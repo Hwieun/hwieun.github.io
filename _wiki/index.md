@@ -5,7 +5,7 @@ date    : 2017-11-26 12:42:03 +0900
 toc     : true
 public  : true
 comment : false
-updated : 2023-03-05 13:53:10
+updated : 2023-03-05 14:48:21
 regenerate: true
 ---
 [[vimwiki-사용-팁]]
@@ -19,4 +19,6 @@ regenerate: true
 [[코드-커버리지-분석-도구]]
 [[DB-CPU-70퍼센트-이상-사용현상]]
 [[memo]]
-[[memo/2023-03]]
+[[memo/2023]]
+[[book/Effective-Java]]
+[[book]]
