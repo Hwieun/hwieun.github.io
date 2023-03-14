@@ -3,7 +3,7 @@ layout  : wiki
 title   : 
 summary : 
 date    : 2023-02-27 00:08:39 +0900
-updated : 2023-02-27 02:19:47
+updated : 2023-03-15 08:28:10
 tag     : 
 toc     : true
 public  : true
@@ -26,7 +26,7 @@ resource: 6CA1626B-B1F4-411E-823B-56632CCC7F46
 * 스트림 파이프라인은 source stream ( -> intermediate operation) -> terminal operation으로 이루어진다.
   * 각 중간 연산은 스트림을 변환한다. 각 원소에 함수를 적용하거나 특정 조건으로 걸러낸다.
   * 종단 연산은 원소를 정렬해 컬렉션에 담거나, 특정 원소 하나를 선택하건, 출력하는 식이다.
-  ```
+  ```java
    productStream.filter(product -> "노트북".equals(product.getName())).collect(Collectors.toList()); 
   ```
   

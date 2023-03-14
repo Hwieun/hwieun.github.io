@@ -5,7 +5,7 @@ date    : 2017-11-26 12:42:03 +0900
 toc     : true
 public  : true
 comment : false
-updated : 2023-03-05 14:48:21
+updated : 2023-03-15 08:12:33
 regenerate: true
 ---
 [[vimwiki-사용-팁]]
@@ -22,3 +22,5 @@ regenerate: true
 [[memo/2023]]
 [[book/Effective-Java]]
 [[book]]
+[[ruby/activeadmin-index-column-width-변경하는-방법]]
+[[spring/@Transactional을-통한-트랜잭션-분리]]

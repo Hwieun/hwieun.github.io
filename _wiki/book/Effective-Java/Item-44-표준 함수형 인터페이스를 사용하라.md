@@ -3,7 +3,7 @@ layout  : wiki
 title   : 
 summary : 
 date    : 2023-02-26 23:09:10 +0900
-updated : 2023-02-27 00:45:56
+updated : 2023-03-15 08:27:51
 tag     : 
 toc     : true
 public  : true
@@ -16,7 +16,7 @@ resource: 33CE2A94-308A-478D-80C9-C9BF4084DB2D
 
 * 함수형 인터페이스란?
  - Java 8에 생긴 개념으로, 1개의 추상 메소드를 갖고 있는 인터페이스를 말한다.
-```
+```java
 @FunctionalInterface
 public interface FunctionalInterface {
 	public abstract void doSomething(String text);
@@ -32,7 +32,7 @@ java.util.function 에 다양한 용도의 표준 함수형 인터페이스가 �
 - Function : 인수와 반환 타입이 다른 함수. ex) Arrays::asList
 - Supplier : 인수를 받지 않고 값을 반환 혹은 제공하는 함수. 이름 그대로 공급자.
 
-```
+```java
 @FunctionalInterface
 public interface LongSupplier {
 	long getAsLong();
@@ -41,7 +41,7 @@ public interface LongSupplier {
 
 - Consumer : 인수를 하나 받고 반환값은 없는 함수. 이름 그대로 소비자. System.out::println
 
-```
+```java
 @FunctionalInterface
 public interface LongConsumer {
 	// 인수로 해당 연산을 수행한다.
@@ -61,7 +61,7 @@ public interface LongConsumer {
 
 ### 주의사항
 
-    **기본 함수형 인터페이스에 박싱된 기본 타입을 넣어 사용하지 말자.** (Item 61)
+**기본 함수형 인터페이스에 박싱된 기본 타입을 넣어 사용하지 말자.** (Item 61)
 
 ### 예외
 
@@ -89,7 +89,7 @@ Comparator<T>는 독자적인 야인터페이스로 살아남아야 한다.
 이는 클라이언트에게 불필요한 모호함만 안겨주며 실제로 문제가 발생하기도 한다.
 ExecutorService의 submit 메서드는 Callable<T>를 받는 것과 Runnable을 받는 것을 overloading했다.
 
-```
+```java
 public interface ExecutorService extends Executor, AutoCloseable {
 	<T> Future<T> submit(Callable<T> task);
 	
