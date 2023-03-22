@@ -3,10 +3,10 @@ layout  : wiki
 title   : DB CPU 70퍼센트 이상 사용현상
 summary : 
 date    : 2023-03-05 11:27:34 +0900
-updated : 2023-03-05 13:00:35
+updated : 2023-03-22 21:52:04
 tag     : 
 toc     : true
-public  : true
+public  : false
 parent  : 
 latex   : false
 resource: 694EF168-0043-4CDA-845A-99D2CDB638AA
