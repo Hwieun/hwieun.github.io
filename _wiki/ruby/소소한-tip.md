@@ -1,9 +1,9 @@
 ---
 layout  : wiki
 title   : 소소한 tip
-summary : 
+summary : ruby 소소한 tip 
 date    : 2023-03-23 18:28:54 +0900
-updated : 2023-03-23 18:47:00
+updated : 2023-03-24 19:00:59
 tag     : 
 toc     : true
 public  : true
@@ -68,3 +68,9 @@ hash.keys[0].class # => Symbol
   ![Screen Shot 2023-01-30 at 11 46 15](https://user-images.githubusercontent.com/29860102/227164595-73ee5b20-e760-4b3c-acb3-270c24ea66d0.png)
  - [https://stackoverflow.com/questions/151505/difference-between-a-class-and-a-module](https://stackoverflow.com/questions/151505/difference-between-a-class-and-a-module)
 
+- ruby hash array sort
+  - [https://stackoverflow.com/questions/3154111/how-do-i-sort-an-array-of-hashes-by-a-value-in-the-hash](https://stackoverflow.com/questions/3154111/how-do-i-sort-an-array-of-hashes-by-a-value-in-the-hash)
+  - hash = {"five" => 5, "ten" => 10}
+    - hash.keys[0].class // String
+  - hash = {:five => 5, :ten => 10}
+    - hash.keys[0].class // Symbol

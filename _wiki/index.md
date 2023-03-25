@@ -5,7 +5,7 @@ date    : 2017-11-26 12:42:03 +0900
 toc     : true
 public  : true
 comment : false
-updated : 2023-03-23 19:02:28
+updated : 2023-03-24 17:58:34
 regenerate: true
 ---
 [[vimwiki-사용-팁]]
@@ -34,3 +34,7 @@ regenerate: true
 [[jpa/연관관계]]
 [[spring/webclient]]
 [[java/inner-class로-인해-메모리-릭-발생]]
+[[archived/재밌어보이는-link들]]
+[[db/Sort-Out-Of-Memory-Error]]
+[[service-개발/금지-permalink-풀기]]
+
