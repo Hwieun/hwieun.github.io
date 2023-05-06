@@ -2,7 +2,8 @@
 ---
 @charset "utf-8";
 
-$base-font-family  : Verdana, sans-serif;
+$base-font-family  : 'Noto Sans KR', Arial, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", "Nanum Gothic", Dotum, '돋움', Helvetica, sans-serif;
+// Verdana, sans-serif;
 $default-font-size : 0.9rem;
 $default-font-color : #000;
 $second-font-color : #503e2b;
@@ -10,6 +11,7 @@ $third-font-color : #9e948a;
 $forth-font-color : #808094;
 $small-font-size   : $default-font-size * 0.8;
 $base-line-height  : 1.5;
+$text-rendering: optimizeLegibility;
 
 $coding-font: Consolas, "Courier New", Courier;
 $theme-color: #9e948a;

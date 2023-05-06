@@ -1,5 +1,6 @@
 body {
-    font-family: Verdana, sans-serif;
+    font-family: 'Noto Sans KR', Arial, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", "Nanum Gothic", Dotum, '돋움', Helvetica, sans-serif;
+    /* Verdana, sans-serif; */
     margin: auto;
     padding: 20px;
     max-width: 720px;
