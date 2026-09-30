@@ -16,6 +16,7 @@ regenerate: true
 
 * [[book/Effective-Java]]
 * [[book/실용주의-프로그래머]]
+* [[book/이너게임-독후감]]
 
 ## DB
 
