@@ -2,9 +2,12 @@
  "type": "wiki",
  "title": "Effective Java",
  "summary": "",
- "parent": "_wiki/book",
+ "parent": "book",
  "url": "/wiki/book/Effective-Java",
  "updated": "2023-03-05 14:44:03",
  "resource": "D176B8CB-8F89-46BD-AB56-C95FD6A48126",
- "children": []
+ "children": [
+  "book/Effective-Java/Item-44-표준 함수형 인터페이스를 사용하라",
+  "book/Effective-Java/Item-45-스트림은-주의해서-사용하라"
+ ]
 }

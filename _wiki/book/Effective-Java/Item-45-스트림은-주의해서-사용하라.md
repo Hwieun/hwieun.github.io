@@ -7,7 +7,7 @@ updated : 2023-03-15 08:28:10
 tag     : 
 toc     : true
 public  : true
-parent  : 
+parent  : [[book/Effective-Java]]
 latex   : false
 resource: 6CA1626B-B1F4-411E-823B-56632CCC7F46
 ---

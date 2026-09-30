@@ -2,7 +2,7 @@
  "type": "wiki",
  "title": "상속 구조",
  "summary": "jpa @Inheritance & @MappedSuperclass",
- "parent": "/Users/hwieun/hwieun.github.io/_wiki/jpa",
+ "parent": "jpa",
  "url": "/wiki/jpa/상속-구조",
  "updated": "2023-03-23 18:55:24",
  "resource": "60E45805-0DAB-4BC4-BEA3-F9FBABDD4A9E",

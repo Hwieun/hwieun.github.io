@@ -236,16 +236,20 @@ function parseInfo(file, info) {
         }
 
         const key = result[1].trim();
-        const val = result[2].trim()
+        let val = result[2].trim()
             .replace(/\[{2}\/?|\]{2}/g, '')    // 문서 이름 앞뒤의 [[  ]], [[/ ]] 를 제거한다.
         ;
+        // parent 가 [[_wiki/book]] 이나 vimwiki 절대경로(/Users/.../_wiki/jpa)로도 적혀 있어 pageMap 키(book, jpa)와 맞춘다.
+        if (key === 'parent') {
+            val = val.replace(/^.*_wiki\/?/, '');
+        }
 
         obj[key] = val;
     });
 
     if (file.type === 'blog') {
-        obj.url = '/blog/' + obj.date.replace(/^(\d{4})-(\d{2})-(\d{2}).*$/, '$1/$2/$3/');
-        obj.url += obj.fileName.replace(/^.*[/]\d{4}-\d{2}-\d{2}-([^/]*)\.md$/, '$1');
+        // _config.yml 의 permalink: /blog/:slug 와 같은 형식이어야 Random 이 404 로 가지 않는다.
+        obj.url = '/blog/' + obj.fileName.replace(/^.*[/]\d{4}-\d{2}-\d{2}-([^/]*)\.md$/, '$1');
 
     } else if (file.type === 'wiki') {
         obj.url = file.path

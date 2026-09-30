@@ -2,7 +2,7 @@
  "type": "wiki",
  "title": "",
  "summary": "",
- "parent": "",
+ "parent": "book/Effective-Java",
  "url": "/wiki/book/Effective-Java/Item-44-표준 함수형 인터페이스를 사용하라",
  "updated": "2023-03-15 08:27:51",
  "resource": "33CE2A94-308A-478D-80C9-C9BF4084DB2D",

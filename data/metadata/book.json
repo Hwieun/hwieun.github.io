@@ -2,9 +2,13 @@
  "type": "wiki",
  "title": "book",
  "summary": "",
- "parent": "_wiki",
+ "parent": "",
  "url": "/wiki/book",
- "updated": "2023-03-05 14:30:18",
+ "updated": "2023-03-22 21:59:10",
  "resource": "92CFA979-331C-4029-BB62-641A4C1A8F3C",
- "children": []
+ "children": [
+  "book/Effective-Java",
+  "book/실용주의-프로그래머",
+  "book/이너게임-독후감"
+ ]
 }

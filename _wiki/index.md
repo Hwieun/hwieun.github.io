@@ -1,4 +1,4 @@
-[[--]]
+---
 layout  : category
 title   : ROOT
 date    : 2017-11-26 12:42:03 +0900

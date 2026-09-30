@@ -4,7 +4,7 @@ adsense: false
 ---
 {% assign documents = site.wiki | sort: 'updated' | reverse %}
 <div id="app">
-    <H3 class="indent">최근 변경된 문서</H3>
+    <H3>최근 변경된 문서</H3>
     <ul class="post-list">
 {% assign documents = site.wiki | sort: 'updated' | reverse %}
 {% for doc in documents limit: 30 %}
@@ -30,7 +30,7 @@ adsense: false
 {% endfor %}
     </ul>
     <h4>
-        <a href="/recent/">전체 문서 리스트 보기 ({{ site.wiki | size | minus: 1 }} 항목)</a>
+        <a href="/recent">전체 문서 리스트 보기 ({{ site.wiki | size | minus: 1 }} 항목)</a>
     </h4>
 
     <!--

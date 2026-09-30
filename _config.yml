@@ -17,6 +17,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-feed
 
 whitelist:
   - jekyll-redirect-from
@@ -117,7 +118,6 @@ Wiki: /recent
 
 # Add general links to site pages here
 links:
-  Resume: /assets/resume.pdf
   
 
 # Add links for more focus here

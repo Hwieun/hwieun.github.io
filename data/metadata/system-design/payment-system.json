@@ -2,7 +2,7 @@
  "type": "wiki",
  "title": "payment system",
  "summary": "",
- "parent": "_wiki/system-design",
+ "parent": "system-design",
  "url": "/wiki/system-design/payment-system",
  "updated": "2023-03-20 09:33:22",
  "resource": "97B2E09B-01D7-446F-B592-735C02185227",
